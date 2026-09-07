@@ -1,0 +1,32 @@
+version: 2
+
+updates:
+  # Dependabot uses the npm ecosystem for pnpm projects.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "gradle"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directories:
+      - "/docker"
+      - "/docker/dev"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker-compose"
+    directories:
+      - "/docker"
+      - "/docker/dev"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
