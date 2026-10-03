@@ -119,7 +119,7 @@ dependencies {
   implementation 'org.scala-lang.modules:scala-collection-compat_2.13:2.12.0'
 
   // Servlet API
-  compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+  compileOnly 'jakarta.servlet:jakarta.servlet-api:6.1.0'
 
   // Logging - unified configuration using Logback
   implementation 'org.slf4j:slf4j-api:2.0.12'
