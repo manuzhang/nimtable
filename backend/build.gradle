@@ -103,7 +103,7 @@ dependencies {
   implementation 'org.mindrot:jbcrypt:0.4'
 
   implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
-  implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.2'
+  implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.22.3'
   implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.2'
 
   implementation "org.eclipse.jetty:jetty-server:${jettyVersion}"
