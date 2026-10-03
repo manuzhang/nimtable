@@ -1,5 +1,5 @@
 # Runtime image
-FROM eclipse-temurin:17-jre-jammy AS nimtable-backend-runtime
+FROM eclipse-temurin:22-jre-jammy AS nimtable-backend-runtime
 
 WORKDIR /nimtable
 
