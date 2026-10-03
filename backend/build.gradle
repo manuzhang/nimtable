@@ -62,7 +62,7 @@ ext {
   jettyVersion = '11.0.15'
   sparkVersion = '4.0.0'
   scalaVersion = '2.13.16'
-  ebeanVersion = '15.11.0'
+  ebeanVersion = '19.6.0'
   flywayVersion = '11.8.0'
 }
 
