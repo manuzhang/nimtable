@@ -37,7 +37,7 @@ services:
   # Database to persist nimtable data.
   # Make sure the setting in config.yaml is consistent with this.
   database:
-    image: postgres:17
+    image: postgres:18
     restart: unless-stopped
     ports:
       - "5432:5432"
