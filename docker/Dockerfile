@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk AS build
+FROM eclipse-temurin:24-jdk AS build
 
 # Install Node.js 23 and pnpm
 RUN apt-get update && \
@@ -41,7 +41,7 @@ RUN cd /nimtable/backend && ./gradlew build --no-daemon
 
 
 # Runtime image
-FROM eclipse-temurin:17-jre-jammy AS nimtable
+FROM eclipse-temurin:22-jre-jammy AS nimtable
 
 WORKDIR /nimtable
 
