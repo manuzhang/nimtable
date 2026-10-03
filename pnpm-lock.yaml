@@ -144,8 +144,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       react-extras:
-        specifier: ^3.0.1
-        version: 3.0.1(react@19.1.0)
+        specifier: ^4.1.0
+        version: 4.1.0(react@19.1.0)
       react-hook-form:
         specifier: ^7.56.4
         version: 7.57.0(react@19.1.0)
@@ -3647,11 +3647,11 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
-  react-extras@3.0.1:
-    resolution: {integrity: sha512-pdLK/BHaQ89NWUm7vnEcY8ROec2KIVdgm8ummNTG3INOWeIBRM25I/TReT6F1W6dMtE8nsom9a+oA4ILNaSm5g==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  react-extras@4.1.0:
+    resolution: {integrity: sha512-58ZdOu6ZGfj9lqylrzKRNOJpaVP9nHs66CGn0B/a/tgo9zbNTzxxuowjvw8l0JlJr8soSX+KdV035R0F7/Cjuw==}
+    engines: {node: '>=20'}
     peerDependencies:
-      react: '>=17'
+      react: '>=19'
 
   react-hook-form@7.57.0:
     resolution: {integrity: sha512-RbEks3+cbvTP84l/VXGUZ+JMrKOS8ykQCRYdm5aYsxnDquL0vspsyNhGRO7pcH6hsZqWlPOjLye7rJqdtdAmlg==}
@@ -7630,7 +7630,7 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
-  react-extras@3.0.1(react@19.1.0):
+  react-extras@4.1.0(react@19.1.0):
     dependencies:
       '@sindresorhus/class-names': 2.0.0
       auto-bind: 5.0.1
