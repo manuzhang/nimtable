@@ -5,8 +5,7 @@ RUN apt-get update && \
     apt-get install -y curl && \
     curl -fsSL https://deb.nodesource.com/setup_23.x | bash - && \
     apt-get install -y nodejs && \
-    corepack enable && \
-    corepack prepare pnpm@latest --activate && \
+    npm install --global pnpm@10.33.4 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

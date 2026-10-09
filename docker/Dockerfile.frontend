@@ -2,8 +2,8 @@ FROM node:26-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Install pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Install pnpm directly; Node.js 25+ no longer bundles Corepack.
+RUN npm install --global pnpm@10.33.4
 
 # Copy package.json and pnpm-lock.yaml
 COPY package.json pnpm-lock.yaml ./
@@ -17,7 +17,7 @@ FROM node:26-alpine AS builder
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN npm install --global pnpm@10.33.4
 # Copy package.json and pnpm-lock.yaml
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm fetch && pnpm install --frozen-lockfile
