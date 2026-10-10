@@ -97,7 +97,7 @@ dependencies {
   implementation "io.ebean:ebean-querybean:${ebeanVersion}"
   implementation "io.ebean:ebean-jackson-mapper:${ebeanVersion}"
   annotationProcessor "io.ebean:querybean-generator:${ebeanVersion}"
-  implementation "jakarta.persistence:jakarta.persistence-api:3.1.0"
+  implementation "jakarta.persistence:jakarta.persistence-api:3.2.0"
   
   // BCrypt for password hashing
   implementation 'org.mindrot:jbcrypt:0.4'
