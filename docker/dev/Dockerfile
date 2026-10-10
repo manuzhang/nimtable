@@ -27,7 +27,7 @@ ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS \
     --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED \
     -jar /nimtable/nimtable.jar"] 
 
-FROM node:23-alpine AS nimtable-frontend-runtime
+FROM node:25-alpine AS nimtable-frontend-runtime
 
 # https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/next-app/dev.Dockerfile
 
